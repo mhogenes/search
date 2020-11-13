@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <style>
+            #t01 {
+                width: 100%;    
+                background-color: #f1f1f1;
+            }
+
+            #t01 td {
+                padding: 17px;
+            }
+
+            #t02 span {
+                color: #DB4437;
+                font-size: 22px;
+            }
+
+            #t03 td {
+                padding-top: 7px;
+            }
+
+            @media (min-width: 840px) {
+            	#t03 {
+            		width: 800px;
+	            }
+            }
+
+            @media (max-width: 839px) {
+	            #t03 {
+            		width: 90%;
+	            }
+            }
+
+            #t03 tfoot {
+                text-align: right;
+            }
+
+            td, th {
+                font-size: 13px;
+                padding-left: 40px;
+                padding-bottom: 7px;
+            }
+
+            span {
+                font-size: 13px;
+                font-family: arial;
+            }
+
+            .btn-group-xs {
+                background: #4b8ef9;
+                color: #fff;
+                border: none;
+                font-size: 13px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+
+            .btn-group-xs:hover {
+                background: #4480e3;
+            }
+        </style>
+
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <table id="t01">
+            <tr>
+                <td>
+                    <img src="logo_advanced.jpg" alt="logo advanced" width="90px">
+                </td>
+                <td style="text-align:right;">
+                    <a href="#" onclick="history.go(-1)">Go back</a>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table id="t02">
+            <tr>
+                <td>
+                    <span>Advanced Search</span>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+        <br>
+
+        <table id="t03">
+            <thead>
+                <th>
+                    <tr>
+                        <td width=200px>
+                            <span style="font-size: 16px;">Find pages with...</span>
+                        </td>
+                    </tr>
+                </th>
+            </thead>
+            <tbody>
+                <form action="https://google.com/search" name="f">
+                    <tr>
+                        <td>
+                            <span>all these words:</span>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control shadow-none form-control-sm" name="as_q" id="search">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>this exact word or phrase:</span>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" name="as_epq" id="search">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>any of these words:</span>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" name="as_oq" id="search">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>none of these words:</span>
+                        </td>
+                        <td>
+                            <input type="text" class="form-control form-control-sm" name="as_eq" id="search">
+                        </td>
+                    </tr>
+                    <tr>
+                        <tfoot style="text-align:center">
+                            <tr>
+                                <td>
+                                </td>
+                                <td style="text-align:right">
+                                    <button type="submit" class="btn-group-xs">Advanced Search</button>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </body>
+</html>
