@@ -5,3 +5,24 @@
     #t01 td {
         padding: 17px;
     }
+
+    
+    span {
+        font-size: 13px;
+        font-family: arial;
+    }
+
+    .btn-group-xs {
+        background: #4b8ef9;
+        color: #fff;
+        border: none;
+        font-size: 13px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .btn-group-xs:hover {
+        background: #4480e3;
+    }
